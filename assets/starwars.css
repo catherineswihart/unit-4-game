@@ -1,0 +1,83 @@
+body {
+    background-image: url("groundback.png");
+    /* background-color: gray; */
+}
+
+h1 {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    font-size: 2em;
+    clear: both;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#header {
+    width: 100%;
+    height: 4em;
+}
+
+#gameTitle {
+    float:right;
+    font-size: 3em;
+    margin-right: 2em;
+}
+
+/* your character style */
+#characters {
+    width: 100%;
+    height: 10em;
+}
+
+.character, .enemy, .defender {
+    position: relative;
+    width: 12em;
+    height: 8em;
+    float: left;
+    border: green 2px solid;
+    text-align: center;
+}
+
+.character img, .enemy img, .defender img {
+    /* display: block; */
+    position: absolute;
+    left: 1.5em;
+    width: 9em;
+    height: 6em;
+}
+
+.character p, .enemy p, .defender p {
+    position: absolute;
+    bottom: 0;
+    left: 5.25em;
+}
+
+/* enemies style */
+#enemies {
+    width: 100%;
+    height: 9em;
+}
+
+.enemy {
+    background: red;
+}
+
+/* fight section */
+#fightSection {
+    width: 100%;
+    height: 4em;
+}
+
+/* defenders style */
+#defenders {
+    width: 100%;
+    height: 9em;
+}
+
+.defender {
+    background: black;
+    color: white;
+}

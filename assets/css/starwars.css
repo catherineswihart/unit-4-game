@@ -1,6 +1,6 @@
-body {
-    background-image: url("assets/images/groundback.png");
-    /* background-color: gray; */
+body{
+    background-image: url("../../assets/images/groundback.png");
+
 }
 
 h1 {
@@ -37,7 +37,7 @@ h2 {
     width: 12em;
     height: 8em;
     float: left;
-    border: green 2px solid;
+    /* border: green 2px solid; */
     text-align: center;
     
 }
@@ -55,8 +55,8 @@ h2 {
     display: inline-block;
     position: absolute;
     left: 1.5em;
-    width: 9em;
-    height: 6em;
+    width: 115px;
+    height: 130px;
 }
 
 .character p, .enemy p, .defender p {

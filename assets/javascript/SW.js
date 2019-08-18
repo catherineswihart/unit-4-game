@@ -1,17 +1,18 @@
 // When restart button is clicked, restart game.
-var reset = function() {
+var reset = function(){
     // obi reset
     $("#obiImg").attr("src", "assets/images/obi.png");
 
     // luke reset
-    $("#lukeImg").attr("src", "assets/images/luke.png");
+    $("#lukeImg").attr("src", "assets/images/luuuke.jpeg");
 
     // darth reset
     $("#darthImg").attr("src", "assets/images/darth.png");
 
     // maul reset
-    $("#maulImg").attr("src", "asserts/images/maul.png");
+    $("#maulImg").attr("src", "assets/images/maul.png");
 
+    console.log("js link works")
     // $("#result").empty();
     noDefender = true;
     gameOver = false;
@@ -71,12 +72,13 @@ function findCharacter(name){
 
 // print all characters
 function printAllCharacters(){
-    $("#characters").();
+    $("#characters") ();
+    // .
     $.each(characters_array,function(index,val){
         //define the elements to display the characters
         var cha_elem = $("<div class='character'></div>");
         var name = $("<h4>"+val.name+"</h4>");
-        var image = $("<img>");
+        var image = $("<val.img_location>");
         image.attr("src",val.img_location)
         var p = $("<p>"+val.health_points+"</p>");
         
@@ -136,14 +138,14 @@ function handleAttack(old_att_power){
     $("#result").html(p1 + p2);
 }
 
-$(document).ready(function(){
-    // print all characters
-    printAllCharacters();
+// $(document).ready(function(){
+//     // print all characters
+//     printAllCharacters();
 
     // Handle click event when one character is clicked 
-    $("#characters").on("click",".character", function(){
+    $("#characters").on("click",".character", function() {
         //save my character's info
-        my_character = findCharacter($(this).find("h4").text());
+        my_character = findCharacter($(this).find("h2").text());
         my_hp =my_character.health_points;
         my_att_power = my_character.attack_power;
    
@@ -197,4 +199,4 @@ $(document).ready(function(){
         // noDefender = true;
         // gameOver = false;
     // });
-})
+// })

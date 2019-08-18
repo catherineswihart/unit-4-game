@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
     <title>starwars</title>
-    <link rel="stylesheet" type="text/css" href="starwars.css">
-    <link rel="stylesheet" type="text/css" href="SW.js">
+    <link rel="stylesheet" type="text/css" href="assets/css/starwars.css">
+    <script src="assets/javascript/SW.js"></script>
 </head>
 
-<body style="background-image:url(groundback: NaNpng;)">   
+<body>  
+    <!-- <img id="back" src="assets/images/groundback.png" alt="background">  -->
         <div>
                 <div id="header">
                     <h1 id="gameTitle">star wars</h1>
@@ -17,12 +18,27 @@
         
                 <!-- Your characters -->
                 <div id="yourCharacters">
-                    <h2>Your character</h2> 
+                    <h2>Your Character</h2> 
                     <div id="characters"></div>
                     <div class= "teamObi">
-                        <img id="obi_wan">
+                        <img id="obiImg">
                         <div id="teamObi" class="name"></div>
                         <div id="obiStats" class="character"></div>
+                    </div>
+                    <div class= "teamLuke">
+                        <img id="lukeImg">
+                        <div id="teamLuke" class="name"></div>
+                        <div id="lukeStats" class="character"></div>
+                    </div>
+                    <div class= "teamDarth">
+                        <img id="darthImg">
+                        <div id="teamDarth" class="name"></div>
+                        <div id="darthStats" class="character"></div>
+                    </div>
+                    <div class= "teamMaul">
+                        <img id="maulImg">
+                        <div id="teamMaul" class="name"></div>
+                        <div id="maulStats" class="character"></div>
                     </div>
                 </div>
         
@@ -50,7 +66,9 @@
                 </div>
         
             </div>
-        
+        <script>
+            reset();
+        </script>
     
 </body>
 </html>
